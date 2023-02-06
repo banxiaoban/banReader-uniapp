@@ -1,0 +1,49 @@
+{
+	"easycom": {
+		"^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#FBA40B",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/image/home.png",
+			"selectedIconPath": "static/image/homeCur.png",
+			"text": "书城"
+		}, {
+			"pagePath": "pages/category/category",
+			"iconPath": "static/image/category.png",
+			"selectedIconPath": "./static/image/categoryCur.png",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/bookshelf/bookshelf",
+			"iconPath": "static/image/books.png",
+			"selectedIconPath": "static/image/booksCur.png",
+			"text": "书架"
+
+		}, {
+			"pagePath": "pages/userCenter/userCenter",
+			"iconPath": "static/image/userCenter.png",
+			"selectedIconPath": "static/image/userCenterCur.png",
+			"text": "我的"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
